@@ -420,6 +420,7 @@
                       allBindings.get('html')    ? valueElement.innerHTML :
                       allBindings.get('enable')  ? !valueElement.disabled :
                       allBindings.get('disable') ? valueElement.disabled :
+                      allBindings.get('optionsValue') ? valueElement.options[valueElement.selectedIndex].value : 
                       (valueElement.innerText || valueElement.textContent || valueElement.value));
 
       // If a convert function was passed, apply it to the field value.
